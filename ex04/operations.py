@@ -6,7 +6,7 @@ def operations(n1, n2):
         quotient = "ERROR (div by zero)"
         remainder = "ERROR (modulo by zero)"
     else:
-        quotient = str(n1/ n2)
+        quotient = str(n1 / n2)
         remainder = str(n1 % n2)
 
     return (n1 + n2, n1 - n2, n1 * n2, quotient, remainder)
@@ -23,6 +23,10 @@ else:
         n1 = int(sys.argv[1])
         n2 = int(sys.argv[2])
         results = operations(n1, n2)
-        print("Sum:\t\t%d\nDifference:\t%d\nProduct:\t%d\nQuotient:\t%s\nRemainder:\t%s" % results)
+        print("""Sum:\t\t%d
+Difference:\t%d
+Product:\t%d
+Quotient:\t%s
+Remainder:\t%s""" % results)
     except ValueError:
         print("InputError: only numbers")
