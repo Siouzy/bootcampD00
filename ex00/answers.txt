@@ -1,0 +1,4 @@
+
+pip list
+cat /Users/Suz/101/miniconda3/lib/python3.7/site-packages/numpy-1.18.1-py3.7.egg-info/PKG-INFO
+pip search 'tesseract'
