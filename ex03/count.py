@@ -1,5 +1,6 @@
 import re
 
+
 def text_analyzer(text="", *argv):
     if len(argv) > 0:
         print("ERROR")
@@ -8,8 +9,6 @@ def text_analyzer(text="", *argv):
         text_analyzer(text)
     else:
         total_len = len(text)
-        #up_re = re.compile(r'[A-B]')
-        #down_re = re.compile(r'[a-b]')
         up_len = len(re.findall(r'[A-Z]', text))
         down_len = len(re.findall(r'[a-z]', text))
         space_len = text.count(' ')
